@@ -34,7 +34,7 @@ function calculateBMI() {
   (55<age<64 && 23<BMI<28) ||
   (65<age && 24<BMI<29) 
   ){
-    alert("your weight is normal");
+    alert("your weight is normal factoring in your age");
   }
 
 }
