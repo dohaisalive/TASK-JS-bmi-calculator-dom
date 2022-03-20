@@ -17,9 +17,9 @@ function calculateBMI() {
 
   if (BMI < 18.5){
     message = "Underweight";
-  } else if (18.5 < BMI < 24.9){
+  } else if (18.5 <= BMI < 24.9){
     message = "Healthy Weight";
-  } else if (25 < BMI < 29.9){
+  } else if (25 <= BMI < 29.9){
     message = "Overweight";
   } else {
     message = "Obesity";
@@ -27,14 +27,14 @@ function calculateBMI() {
 
   alert(`your BMI is ${BMI}, ${message}`);
 
-  if ((19<age<24 && 19<BMI<24) ||
-  (25<age<34 && 20<BMI<25) ||
-  (35<age<44 && 21<BMI<26) ||
-  (45<age<54 && 22<BMI<27) ||
-  (55<age<64 && 23<BMI<28) ||
-  (65<age && 24<BMI<29) 
+  if ((19<=age<=24 && 19<=BMI<=24) ||
+  (25<=age<=34 && 20<=BMI<=25) ||
+  (35<=age<=44 && 21<=BMI<=26) ||
+  (45<=age<=54 && 22<=BMI<=27) ||
+  (55<=age<=64 && 23<=BMI<=28) ||
+  (65<=age && 24<=BMI<=29) 
   ){
-    alert("your weight is normal factoring in your age");
+    alert("your weight is healthy, factoring in your age");
   }
 
 }
